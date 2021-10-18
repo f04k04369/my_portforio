@@ -1,3 +1,17 @@
 @charset "UTF-8";
 
 /*画面のスタイルシート*/
+body {
+    font-family : "Noto sans JP",sans-serif ;
+    margin : 0 ;
+    min-width : 1026px ;
+}
+
+.top-section {
+    background : radial-gradient(#A1A3A0,#6D6F6C) ;
+    color : #FFFFFF ;
+}
+
+.top-section span {
+    display : block ;
+}
