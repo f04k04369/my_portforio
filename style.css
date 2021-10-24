@@ -7,11 +7,52 @@ body {
     min-width : 1026px ;
 }
 
-.top-section {
-    background : radial-gradient(#A1A3A0,#6D6F6C) ;
-    color : #FFFFFF ;
+.top-article {
+    background : radial-gradient(#A1A3A0,#6D6F6C);
+    color : #FFFFFF;
+    position:relative;
+    height: 1079px;
 }
 
-.top-section span {
+.top-article .top{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
+
+.top-article span {
     display : block ;
 }
+
+.top-icon{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-icon-right{
+    background-color: #fff;
+    font-size: 20px;
+    color: #000;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.top-icon-left{
+    background-color: #fff;
+    font-size: 20px;
+    color: #000;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.top-icon p{}
+
+.top-profile{}
+
+.top-profile h1{}
+
+.top-profile p{}
+
