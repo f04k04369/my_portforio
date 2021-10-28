@@ -16,8 +16,8 @@ body {
 
 .top-article .top{
     position: absolute;
-    left: 200px;
-    top: 100px;
+    left: 500px;
+    top: 40px;
 }
 
 .top-article span {
@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 
 .top-icon-right{
     background-color: #fff;
@@ -48,11 +49,24 @@ body {
     padding: 10px 0;
 }
 
-.top-icon p{}
+.top-icon p{
+    margin: 0 ;
+    ;
+}
 
-.top-profile{}
+.top-profile{
+    margin: 0 150px;
 
-.top-profile h1{}
+}
 
-.top-profile p{}
+.top-profile h1{
+    margin: 0;
+    font-size: 100px;
+}
+
+.top-profile p{
+    margin: 0 ;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
 
