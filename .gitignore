@@ -1,2 +1,2 @@
 #.DS_Store ファイルは不要
-*..DS_Store
+*.DS_Store
