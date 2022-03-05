@@ -1,103 +1,132 @@
-@charset "UTF-8";
-
-/*画面のスタイルシート*/
+@charset "UTF-8"; /*画面のスタイルシート*/
 body {
     font-family : "Noto sans JP",sans-serif ;
     margin : 0 ;
 }
 
 /*共通のスタイルシート*/
-h2{
-    font-size: 30px;
+h2 {
+    font-size: 25px;
+    margin: 50px 0 0 0px;
 }
 
-p{
+p {
     font-size: 30px;
     margin: 30px 0;
 }
 
-a{
-    width: 150px;
-    font-size:30px;
+a {
+    width: auto;
+    font-size: 30px;
     text-decoration: none;
-}    
-
-.btn-link{
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
 }
 
-
-
+.btn-link {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
 
 /*トップ開始*/
 .top-article {
     background : radial-gradient(#A1A3A0,#6D6F6C);
     color : #FFFFFF;
-    height: 100vh;
+    height: 93vh;
     margin: 0px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 .top-article span {
     display : block ;
 }
 
-.top-icon{
+.top-icon {
     height: auto;
     display: flex;
     justify-content: space-between;
 }
 
-
-.top-icon-right{
+.top-icon-right {
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 20px;
     color: #000;
-    height: 100%;
-    width: 100px;
-    text-align: center;
+    height: 70px;
+    width: 70px;
     padding: 10px 0;
 }
 
-.top-icon-left{
+.top-icon-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #fff;
     font-size: 20px;
     color: #000;
-    width: 100px;
-    height: 100%;
-    text-align: center;
+    width: 70px;
+    height: 70px;
     padding: 10px 0;
 }
 
-.top-icon p{
+.icon-box {
+    text-align: center;
+}
+
+.top-icon p {
     font-size: 14px;
     margin: 0;
 }
 
-.top-main{
-    height: auto;
-    display:flex;
+.top-main {
+    height: 100%;
+    display: flex;
     justify-content: space-between;
-}
-.top-profile{
-    margin: 0 -150px 0 500px;
+    position: relative;
 }
 
-.top-profile h1{
+.top-profile {
+    padding: 0 0 0 100px;
+    overflow: visible;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.top-profile h1 {
     margin: 0;
-    font-size: 50px;
+    font-size: 130px;
 }
 
-.top-profile p{
+.top-profile p {
+    display: inline;
     margin: 0;
-    font-size: 50px;
-    letter-spacing: 0.1em;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 0;
 }
 
-.top-article .top-main .top{
+.top-picture {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    right: 0;
+}
+
+.top-picture img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    max-width: 700px;
+}
+
+.top-article .top-main .top {
     width: 100%;
     left: 500px;
     top: 40px;
@@ -107,153 +136,175 @@ a{
 }
 
 /*about-css開始*/
-
-.about-article{
-    display:flex;
+.about-article {
+    display: flex;
     overflow: hidden;
-    height: auto;
+    height: 600px;
+    position: relative;
 }
-.about-article h1{
+
+.about-article h1 {
     margin: 30px 0;
 }
 
-.about-article p{
+.about-article p {
     font-size: 14px;
-    margin: 20px 0;
     letter-spacing: 0.3em;
 }
 
-.about-right{
-    margin-left: 200px;
-    width: 70%;
-}
-
-.icon-about{
+.about-right {
+    margin-left: 50px;
     width: auto;
-    
+    padding: 100px 0 0 0;
+    z-index: 1;
 }
 
-.icon-about img{
-    margin-right: 200px;
-    width: 100px;
-    height: 100px;
+.icon-about {
+    width: auto;
+    display: flex;
+    justify-content: left;
 }
 
-.pc-img{
-    width: 50%;
-    position: relative;
-    right: -400px;
+.icon-about img {
+    width: 50px;
+    margin: 0 20px 0 0;
+}
+
+.pc-img {
+    height: 100%;
+    position: absolute;
+    right: -355px;
 }
 
 /*プロジェクト*/
+.projects-article {
+    height: auto;
+}
 
 /*twitterクローン*/
-.twitter-clone{
+.twitter-clone {
     background : radial-gradient(#A1A3A0,#6D6F6C);
     color : #FFFFFF;
-    height: auto;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.twitter-block{
-    display:flex;
+.projects-title {
+    margin: 50px 0 50px 50px;
+}
+
+.twitter-block {
+    display: flex;
     height: 80%;
 }
 
-.twitter-img-box{
-    width: 800px;
+.twitter-img-box {
+    width: 50%;
     display: flex;
     align-items: flex-end;
-    margin: 0 200px;
+    margin: 0 50px;
 }
 
-.twitter-img{
+.twitter-img {
     background-color: #fff;
     display: flex;
-    width: 100%;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
-.twitter-img .twitter-sidebar{
+.twitter-img .twitter-sidebar {
     width: 10%;
 }
 
-.twitter-img .twitter-screenshot{
-    width: 70%;max-width: 800px;
+.twitter-img .twitter-screenshot {
+    width: 90%;
+    max-width: 800px;
 }
 
-.twitter-main{
+.twitter-main {
     height: 100%;
 }
 
-.twitter-website-btn{
-    text-align: center;
-    width: 150px;
-    padding: 10px 10px;
-    background-color:#fff;
-    color:#6D6F6C;
-    border: solid 1px #fff;
+.twitter-main p {
+    font-size: 16px;
 }
 
-.twitter-github-btn{
+.twitter-website-btn {
     text-align: center;
     width: 150px;
-    padding: 10px 10px;
+    padding: 15px 10px;
+    background-color: #fff;
+    color: #6D6F6C;
+    border: solid 1px #fff;
+    font-size: 20px;
+}
+
+.twitter-github-btn {
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    padding: 15px 10px;
     color: #fff;
     border: solid 1px #fff;
 }
 
 /*Netflixクローン*/
-.netflix-clone{
-
+.netflix-clone {
+    height: 50%;
 }
 
-.netflix-block{
-    height: auto;
+.netflix-block {
+    height: 80%;
     display: flex;
 }
 
-.netflix-img{
-    width: 800px;
+.netflix-img {
+    width: 50%;
     display: flex;
     align-items: flex-start;
-    margin: 0 200px;
+    margin: 0 0 0 50px;
 }
 
-.netflix-img img{
-    width:100% ;
+.netflix-img img {
+    width: 100% ;
 }
 
-.netflix-main{
+.netflix-main {
     height: 100%;
+    width: min-content;
+    margin-left: 50px;
 }
 
-.netflix-website-btn{
+.netflix-main p {
+    font-size: 16px;
+}
+
+.netflix-website-btn {
     text-align: center;
     width: 150px;
-    padding: 10px 10px;
-    background-color:none;
-    color:#000000;
+    padding: 15px 15px;
+    font-size: 20px;
+    background-color: none;
+    color: #000000;
     border: solid 1px #000000;
 }
 
-.netflix-github-btn{
+.netflix-github-btn {
     text-align: center;
     width: 150px;
-    padding: 10px 10px;
-    background-color:#000000;
+    padding: 15px 15px;
+    font-size: 20px;
+    background-color: #000000;
     color: #fff;
     border: solid 1px #000000;
 }
 
 /*お問合せ*/
-
-.contacts-article{
-    height: 40vh;
-    margin-top: 300px;
+.contacts-article {
+    height: 50%;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     padding: 0 200px;
@@ -261,27 +312,34 @@ a{
     color: #fff;
 }
 
-.contacts-article a{
+.contacts-article img {
+    width: 30px;
+}
+
+.contacts-article a {
     color: #fff;
-    margin-left: 50px; ;
+    margin-left: 20px;
+    font-size: 20px;
 }
 
-.tell{
+.tell {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 50px 0 20px 0;
 }
 
-.tell a{
+.tell a {
     width: auto;
+    font-size: 20px;
 }
 
-.mail{
+.mail {
     display: flex;
     align-items: center;
+    margin: 0 0 50px 0;
 }
 
-footer{
+footer {
     background-color: #656363;
     color: #fff;
     text-align: center;
@@ -289,13 +347,383 @@ footer{
     position: relative;
     margin: auto ;
 }
-footer p{
+
+footer p {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    width: 100%;
+    line-height: 3.2rem;
+    font-size: 16px;
+}
+
+
+    
+/* スマホ用スタイルシート */
+@media screen and (max-width: 844px) {
+
+/*共通のスタイルシート*/
+h2 {
+    font-size: 25px;
+    margin: 50px 0 0 0px;
+}
+
+p {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+a {
+    width: auto;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.btn-link {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
+
+/*トップ開始*/
+.top-article {
+    background : radial-gradient(#A1A3A0,#6D6F6C);
+    color : #FFFFFF;
+    height: 93vh;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-article span {
+    display : block ;
+}
+
+.top-icon {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-icon-right {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    height: 70px;
+    width: 70px;
+    padding: 10px 0;
+}
+
+.top-icon-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    font-size: 20px;
+    color: #000;
+    width: 70px;
+    height: 70px;
+    padding: 10px 0;
+}
+
+.icon-box {
+    text-align: center;
+}
+
+.top-icon p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.top-main {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.top-profile {
+    padding: 0 0 0 100px;
+    overflow: visible;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.top-profile h1 {
+    margin: 0;
+    font-size: 130px;
+}
+
+.top-profile p {
+    display: inline;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 0;
+}
+
+.top-picture {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    right: 0;
+}
+
+.top-picture img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    max-width: 700px;
+}
+
+.top-article .top-main .top {
+    width: 100%;
+    left: 500px;
+    top: 40px;
+    height: auto;
+    object-fit: contain;
+    max-width: 2000px;
+}
+
+/*about-css開始*/
+.about-article {
+    display: flex;
+    overflow: hidden;
+    height: 600px;
+    position: relative;
+}
+
+.about-article h1 {
+    margin: 30px 0;
+}
+
+.about-article p {
+    font-size: 14px;
+    letter-spacing: 0.3em;
+}
+
+.about-right {
+    margin-left: 50px;
+    width: auto;
+    padding: 100px 0 0 0;
+    z-index: 1;
+}
+
+.icon-about {
+    width: auto;
+    display: flex;
+    justify-content: left;
+}
+
+.icon-about img {
+    width: 50px;
+    margin: 0 20px 0 0;
+}
+
+.pc-img {
+    height: 100%;
+    position: absolute;
+    right: -355px;
+}
+
+/*プロジェクト*/
+.projects-article {
+    height: auto;
+}
+
+/*twitterクローン*/
+.twitter-clone {
+    background : radial-gradient(#A1A3A0,#6D6F6C);
+    color : #FFFFFF;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects-title {
+    margin: 50px 0 50px 50px;
+}
+
+.twitter-block {
+    display: flex;
+    height: 80%;
+}
+
+.twitter-img-box {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 50px;
+}
+
+.twitter-img {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.twitter-img .twitter-sidebar {
+    width: 10%;
+}
+
+.twitter-img .twitter-screenshot {
+    width: 90%;
+    max-width: 800px;
+}
+
+.twitter-main {
+    height: 100%;
+}
+
+.twitter-main p {
+    font-size: 16px;
+}
+
+.twitter-website-btn {
+    text-align: center;
+    width: 150px;
+    padding: 15px 10px;
+    background-color: #fff;
+    color: #6D6F6C;
+    border: solid 1px #fff;
+    font-size: 20px;
+}
+
+.twitter-github-btn {
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    padding: 15px 10px;
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+/*Netflixクローン*/
+.netflix-clone {
+    height: 50%;
+}
+
+.netflix-block {
+    height: 80%;
+    display: flex;
+}
+
+.netflix-img {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 0 50px;
+}
+
+.netflix-img img {
+    width: 100% ;
+}
+
+.netflix-main {
+    height: 100%;
+    width: min-content;
+    margin-left: 50px;
+}
+
+.netflix-main p {
+    font-size: 16px;
+}
+
+.netflix-website-btn {
+    text-align: center;
+    width: 150px;
+    padding: 15px 15px;
+    font-size: 20px;
+    background-color: none;
+    color: #000000;
+    border: solid 1px #000000;
+}
+
+.netflix-github-btn {
+    text-align: center;
+    width: 150px;
+    padding: 15px 15px;
+    font-size: 20px;
+    background-color: #000000;
+    color: #fff;
+    border: solid 1px #000000;
+}
+
+/*お問合せ*/
+.contacts-article {
+    height: 50%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px;
+    background-color: #2F2F2F;
+    color: #fff;
+}
+
+.contacts-article img {
+    width: 30px;
+}
+
+.contacts-article a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.tell {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 20px 0;
+}
+
+.tell a {
+    width: auto;
+    font-size: 20px;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+
+footer {
+    background-color: #656363;
+    color: #fff;
+    text-align: center;
+    height: 10vh;
+    position: relative;
     margin: auto ;
-    width: 80%;
-    height: 3.2rem;
+}
+
+footer p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 3.2rem;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+    
 }
