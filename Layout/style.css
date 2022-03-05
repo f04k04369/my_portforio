@@ -47,19 +47,7 @@ a {
     height: auto;
     display: flex;
     justify-content: space-between;
-}
-
-.top-icon-right {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    color: #000;
-    height: 70px;
-    width: 70px;
-    padding: 10px 0;
+    width: 100%;
 }
 
 .top-icon-left {
@@ -72,6 +60,27 @@ a {
     color: #000;
     width: 70px;
     height: 70px;
+    padding: 10px 0;
+}
+
+.pc {
+    display: block !important;
+}
+
+.sp {
+    display: none !important;
+}
+
+.top-icon-right {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    height: 70px;
+    width: 70px;
     padding: 10px 0;
 }
 
@@ -113,16 +122,14 @@ a {
 }
 
 .top-picture {
-    position: absolute;
     width: 65%;
-    height: 100%;
-    right: 0;
 }
 
 .top-picture img {
     width: 100%;
     position: absolute;
     bottom: 0;
+    right: 0;
     max-width: 700px;
 }
 
@@ -225,6 +232,7 @@ a {
 
 .twitter-main {
     height: 100%;
+    padding: 0 50px;
 }
 
 .twitter-main p {
@@ -308,8 +316,8 @@ a {
     display: flex;
     flex-direction: column;
     padding: 0 200px;
-    background-color: #2F2F2F;
-    color: #fff;
+    /* background-color: #2F2F2F; */
+    /* color: #fff; */
 }
 
 .contacts-article img {
@@ -359,371 +367,372 @@ footer p {
     font-size: 16px;
 }
 
-
-    
 /* スマホ用スタイルシート */
 @media screen and (max-width: 844px) {
+    /*共通のスタイルシート*/ h2 {
+        font-size: 25px;
+        margin: 30px 0 0 0px;
+    }
 
-/*共通のスタイルシート*/
-h2 {
-    font-size: 25px;
-    margin: 50px 0 0 0px;
-}
+    p {
+        font-size: 30px;
+        margin: 20px 0;
+    }
 
-p {
-    font-size: 30px;
-    margin: 30px 0;
-}
+    a {
+        width: auto;
+        font-size: 30px;
+        text-decoration: none;
+    }
 
-a {
-    width: auto;
-    font-size: 30px;
-    text-decoration: none;
-}
+    .btn-link {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        margin: 0 auto 20px auto;
+    }
 
-.btn-link {
-    display: flex;
-    justify-content: space-between;
-    width: 330px;
-}
+    /*トップ開始*/
+    .top-article {
+        background : radial-gradient(#A1A3A0,#6D6F6C);
+        color : #FFFFFF;
+        height: 85vh;
+        margin: 0px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-/*トップ開始*/
-.top-article {
-    background : radial-gradient(#A1A3A0,#6D6F6C);
-    color : #FFFFFF;
-    height: 93vh;
-    margin: 0px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    .top-article span {
+        display : block ;
+    }
 
-.top-article span {
-    display : block ;
-}
+    .pc {
+        display: none !important;
+    }
 
-.top-icon {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-}
+    .sp {
+        display: block !important;
+        margin: 0 auto;
+    }
 
-.top-icon-right {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    color: #000;
-    height: 70px;
-    width: 70px;
-    padding: 10px 0;
-}
+    .top-icon {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.top-icon-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    font-size: 20px;
-    color: #000;
-    width: 70px;
-    height: 70px;
-    padding: 10px 0;
-}
+    .top-icon-right {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        height: 70px;
+        width: 70px;
+        padding: 10px 0;
+        background: none;
+    }
 
-.icon-box {
-    text-align: center;
-}
+    .top-icon-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: none;
+        font-size: 20px;
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        padding: 10px 0;
+    }
 
-.top-icon p {
-    font-size: 14px;
-    margin: 0;
-}
+    .icon-box {
+        text-align: center;
+    }
 
-.top-main {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
+    .top-icon p {
+        font-size: 14px;
+        margin: 0;
+    }
 
-.top-profile {
-    padding: 0 0 0 100px;
-    overflow: visible;
-    position: absolute;
-    left: 0;
-    z-index: 1;
-}
+    .top-main {
+        width: 100%;
+        position: relative;
+    }
 
-.top-profile h1 {
-    margin: 0;
-    font-size: 130px;
-}
+    .top-profile {
+        overflow: visible;
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        text-align: center;
+        padding: 0;
+    }
 
-.top-profile p {
-    display: inline;
-    margin: 0;
-    font-size: 30px;
-    font-weight: 100;
-    letter-spacing: 0;
-}
+    .top-profile h1 {
+        margin: 0;
+        font-size: 80px;
+    }
 
-.top-picture {
-    position: absolute;
-    width: 65%;
-    height: 100%;
-    right: 0;
-}
+    .top-profile p {
+        display: inline;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 0;
+    }
 
-.top-picture img {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    max-width: 700px;
-}
+    .top-picture {
+        width: 100%;
+    }
 
-.top-article .top-main .top {
-    width: 100%;
-    left: 500px;
-    top: 40px;
-    height: auto;
-    object-fit: contain;
-    max-width: 2000px;
-}
+    .top-picture img {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        max-width: 700px;
+    }
 
-/*about-css開始*/
-.about-article {
-    display: flex;
-    overflow: hidden;
-    height: 600px;
-    position: relative;
-}
+    .top-article .top-main .top {
+        width: 100%;
+        left: 500px;
+        top: 40px;
+        height: auto;
+        object-fit: contain;
+        max-width: 2000px;
+    }
 
-.about-article h1 {
-    margin: 30px 0;
-}
+    /*about-css開始*/
+    .about-article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        height: 500px;
+        text-align: center;
+        position: relative;
+        padding: 0 20px;
+    }
 
-.about-article p {
-    font-size: 14px;
-    letter-spacing: 0.3em;
-}
+    .about-article h1 {
+        margin: 30px 0;
+    }
 
-.about-right {
-    margin-left: 50px;
-    width: auto;
-    padding: 100px 0 0 0;
-    z-index: 1;
-}
+    .about-article p {
+        font-size: 14px;
+        letter-spacing: 0.3em;
+        display: inline-block;
+        text-align: left;
+    }
 
-.icon-about {
-    width: auto;
-    display: flex;
-    justify-content: left;
-}
+    .about-right {
+        margin-left: 0px;
+        width: auto;
+        padding: 0px 0 0 0;
+    }
 
-.icon-about img {
-    width: 50px;
-    margin: 0 20px 0 0;
-}
+    .icon-about {
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
 
-.pc-img {
-    height: 100%;
-    position: absolute;
-    right: -355px;
-}
+    .icon-about img {
+        width: 50px;
+        margin: 0 20px 0 0;
+    }
 
-/*プロジェクト*/
-.projects-article {
-    height: auto;
-}
+    .pc-img {
+        display: none !important;
+        height: 100%;
+        position: absolute;
+        right: -355px;
+    }
 
-/*twitterクローン*/
-.twitter-clone {
-    background : radial-gradient(#A1A3A0,#6D6F6C);
-    color : #FFFFFF;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    /*プロジェクト*/
+    .projects-article {
+        height: auto;
+        text-align: center;
+    }
 
-.projects-title {
-    margin: 50px 0 50px 50px;
-}
+    /*twitterクローン*/
+    .twitter-clone {
+        background : radial-gradient(#A1A3A0,#6D6F6C);
+        color : #FFFFFF;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
-.twitter-block {
-    display: flex;
-    height: 80%;
-}
+    .projects-title {
+        margin: 20px 20px;
+    }
 
-.twitter-img-box {
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    margin: 0 50px;
-}
+    .twitter-block {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+    }
 
-.twitter-img {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
+    .twitter-img-box {
+        width: 80%;
+        display: flex;
+        align-items: flex-end;
+        margin: 10px auto;
+    }
 
-.twitter-img .twitter-sidebar {
-    width: 10%;
-}
+    .twitter-img {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
-.twitter-img .twitter-screenshot {
-    width: 90%;
-    max-width: 800px;
-}
+    .twitter-img .twitter-sidebar {
+        width: 10%;
+    }
 
-.twitter-main {
-    height: 100%;
-}
+    .twitter-img .twitter-screenshot {
+        width: 90%;
+        max-width: 800px;
+    }
 
-.twitter-main p {
-    font-size: 16px;
-}
+    .twitter-main {
+        height: 100%;
+    }
 
-.twitter-website-btn {
-    text-align: center;
-    width: 150px;
-    padding: 15px 10px;
-    background-color: #fff;
-    color: #6D6F6C;
-    border: solid 1px #fff;
-    font-size: 20px;
-}
+    .twitter-main p {
+        font-size: 16px;
+    }
 
-.twitter-github-btn {
-    text-align: center;
-    font-size: 20px;
-    width: 150px;
-    padding: 15px 10px;
-    color: #fff;
-    border: solid 1px #fff;
-}
+    .twitter-website-btn {
+        text-align: center;
+        width: 100px;
+        padding: 15px 10px;
+        background-color: #fff;
+        color: #6D6F6C;
+        border: solid 1px #fff;
+        font-size: 20px;
+    }
 
-/*Netflixクローン*/
-.netflix-clone {
-    height: 50%;
-}
+    .twitter-github-btn {
+        text-align: center;
+        font-size: 20px;
+        width: 100px;
+        padding: 15px 10px;
+        color: #fff;
+        border: solid 1px #fff;
+    }
 
-.netflix-block {
-    height: 80%;
-    display: flex;
-}
+    /*Netflixクローン*/
+    .netflix-clone {
+        height: 50%;
+    }
 
-.netflix-img {
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-    margin: 0 0 0 50px;
-}
+    .netflix-block {
+        height: 80%;
+        display: flex;
+    }
 
-.netflix-img img {
-    width: 100% ;
-}
+    .netflix-img {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        margin: 0 0 0 50px;
+    }
 
-.netflix-main {
-    height: 100%;
-    width: min-content;
-    margin-left: 50px;
-}
+    .netflix-img img {
+        width: 100% ;
+    }
 
-.netflix-main p {
-    font-size: 16px;
-}
+    .netflix-main {
+        height: 100%;
+        width: min-content;
+        margin-left: 50px;
+    }
 
-.netflix-website-btn {
-    text-align: center;
-    width: 150px;
-    padding: 15px 15px;
-    font-size: 20px;
-    background-color: none;
-    color: #000000;
-    border: solid 1px #000000;
-}
+    .netflix-main p {
+        font-size: 16px;
+    }
 
-.netflix-github-btn {
-    text-align: center;
-    width: 150px;
-    padding: 15px 15px;
-    font-size: 20px;
-    background-color: #000000;
-    color: #fff;
-    border: solid 1px #000000;
-}
+    .netflix-website-btn {
+        text-align: center;
+        width: 100px;
+        padding: 15px 15px;
+        font-size: 20px;
+        background-color: none;
+        color: #000000;
+        border: solid 1px #000000;
+    }
 
-/*お問合せ*/
-.contacts-article {
-    height: 50%;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    padding: 0 200px;
-    background-color: #2F2F2F;
-    color: #fff;
-}
+    .netflix-github-btn {
+        text-align: center;
+        width: 100px;
+        padding: 15px 15px;
+        font-size: 20px;
+        background-color: #000000;
+        color: #fff;
+        border: solid 1px #000000;
+    }
 
-.contacts-article img {
-    width: 30px;
-}
+    /*お問合せ*/
+    .contacts-article {
+        height: 50%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        background-color: #2F2F2F;
+        color: #fff;
+        padding: 0;
+    }
 
-.contacts-article a {
-    color: #fff;
-    margin-left: 20px;
-    font-size: 20px;
-}
+    .contacts-article img {
+        width: 30px;
+    }
 
-.tell {
-    display: flex;
-    align-items: center;
-    margin: 50px 0 20px 0;
-}
+    .contacts-article a {
+        color: #fff;
+        margin-left: 20px;
+        font-size: 20px;
+    }
 
-.tell a {
-    width: auto;
-    font-size: 20px;
-}
+    .tell {
+        display: flex;
+        align-items: center;
+        margin: 50px 0 20px 0;
+    }
 
-.mail {
-    display: flex;
-    align-items: center;
-    margin: 0 0 50px 0;
-}
+    .tell a {
+        width: auto;
+        font-size: 20px;
+    }
 
-footer {
-    background-color: #656363;
-    color: #fff;
-    text-align: center;
-    height: 10vh;
-    position: relative;
-    margin: auto ;
-}
+    .mail {
+        display: flex;
+        align-items: center;
+        margin: 0 0 50px 0;
+    }
 
-footer p {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    line-height: 3.2rem;
-    font-size: 16px;
-}
+    footer {
+        background-color: #656363;
+        color: #fff;
+        text-align: center;
+        height: 10vh;
+        position: relative;
+        margin: auto ;
+    }
 
-
-
-
-
-
-
-    
+    footer p {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        line-height: 3.2rem;
+        font-size: 16px;
+    }
 }
