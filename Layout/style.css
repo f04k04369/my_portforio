@@ -316,8 +316,8 @@ a {
     display: flex;
     flex-direction: column;
     padding: 0 200px;
-    /* background-color: #2F2F2F; */
-    /* color: #fff; */
+    background-color: #2F2F2F;
+    color: #fff;
 }
 
 .contacts-article img {
